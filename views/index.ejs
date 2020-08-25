@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Tanizia Fagundes">
+    <meta name="description" content="plataforma de perguntas e respostas baseado no yahoo">
+    <meta name="keywords" content="palavras, chaves, separadas,por,virgulas">
+    <link rel="stylesheet" href="/css/style.css">
+    <title>Guia do programador</title>
+</head>
+<body>
+    <h1>Guia do programador</h1>
+    <hr>
+    <h3>Lista de perguntas</h3>
+
+    <!--Exibir variáveis no htl atráves do ejs
+    <%= nome %> 
+    <%= lang %>
+    <%= empresa %>
+    -->
+
+    <p>Nome: <%= nome %> </p>
+    <p>Linguagem: <%= lang %> </p>
+    <p>Empresa: <%= empresa %> </p>
+
+    <!--ATENÇÃO a forma que é usado ejs em estruturas condicionais-->
+
+    <% if(msg ==  true){ %>
+        <h3>Isso é uma mensagem de erro!!</h3>
+    <% }else { %>
+        <h3>Nenhum erro!!</h3>
+    <% } %>
+
+    <!--Estrutura de repetição com ejs (usando a variavel produto)-->
+    <% produtos.forEach( function(produto) { %>
+        <hr>
+        <h4><%= produto.nome %></h4>
+        
+        <h3><%= produto.valor %></h3>
+    <%})%>
+
+    <!--Arquivos Estáticos-->
+    <img src="/img/img-01.svg" alt="">  <!--não é necessario colocar a pasta public na rota pois o node já entende que os arquivos static estão na pasta public-->
+    
+</body>
+</html>

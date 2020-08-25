@@ -1,0 +1,11 @@
+{
+  "name": "projeto_01",
+  "version": "1.0.0",
+  "description": "uma plataforma de perguntas e respostas ao estilo yahoo",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Tanizia Fagundes",
+  "license": "ISC"
+}

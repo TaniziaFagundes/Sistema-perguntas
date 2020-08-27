@@ -8,7 +8,7 @@ app.use(express.static('public')); //definindo arquivos staticos (explicação n
 app.get("/:nome/:lang", function(req, resp){
     var nome = req.params.nome;
     var lang = req.params.lang;
-    var msg = true;
+    var exibirMsg = true;
     var produtos =  [ 
         {nome: "doritos", valor:3.14},
         {nome: "coca-cola", valor:5.50},

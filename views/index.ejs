@@ -4,15 +4,18 @@
   
   <div class="container">
     <hr>
-    <h1>Perguntas</h1>
-    <hr>
-    <a href="/perguntar" class="btn btn-primary">Perguntar</a>
+    <div class="card">
+      <div class="card-body">
+        <h1 class="float-left font-weight-bold font-italic">Perguntas</h1>
+        <a href="/perguntar" class="btn btn-primary float-md-right">Realizar Pergunta</a>
+      </div>
+    </div>
     <hr>
     <% perguntas.forEach(pergunta => { %>
       <br>
         <div class="card">
           <div class="card-body">
-            <h3><%= pergunta.titulo%></h3>
+            <h3 class="font-italic"><%= pergunta.titulo%></h3>
             <p><%= pergunta.descricao%></p>
           </div>
           <div class="card-footer">

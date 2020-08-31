@@ -6,3 +6,8 @@ body{
 #formulario-pergunta{
     margin-top: 5vh;
 }
+
+#pergunta-color{
+    background-color: rgb(168, 192, 228);
+    padding: 2%;
+}

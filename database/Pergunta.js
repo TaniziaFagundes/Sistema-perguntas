@@ -13,11 +13,14 @@ const Pergunta = connection.define('pergunta', {
 
 Pergunta.sync({force: false}).then(() => {}); //se no banco de dados não existe uma tabela pergunta ele cria uma.
 
+module.exports = Pergunta;
+
 /* os codigos acima estao criando uma tabela chamada pergunta, exemplo em sql:
 
-CREATE TABLE pergunta{
-    id NOTNULL auto-increment
-    titulo VARCHAR(255) NOTNULL,
-    descricao TEXT NOTNULL
-}
+CREATE TABLE IF NOT EXISTS pergunta(
+    id INTERGER NOT NULL auto-increment,
+    titulo VARCHAR(255) NOT NULL,
+    descricao TEXT NOT NULL,
+    PRIMARY KEY(id)
+)
 */
